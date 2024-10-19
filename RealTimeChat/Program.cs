@@ -1,5 +1,6 @@
 using DataAccess.DbContext;
 using Microsoft.EntityFrameworkCore;
+using RealTimeChat.AddServicesCollection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<RealTimeDapperContext>();
 
+builder.Services.ConfigureTransient();
+
 builder.Services.AddDbContext<RealTimeDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("MyDb"),
@@ -19,8 +22,14 @@ builder.Services.AddDbContext<RealTimeDbContext>(options =>
     )
 );
 
+var webSocketServer = new WebSocketServer();
+webSocketServer.ConfigureServices(builder.Services);
 
 var app = builder.Build();
+
+
+webSocketServer.Configure(app);
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

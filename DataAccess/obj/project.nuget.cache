@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZLRoL93SLsB6bSoKnYg0Mj+e3+hJpkJwmSAIkIjnyKJJfb70YDk7kdijQtMI73dxyQO/S6lTAvqgLBXraWZzwA==",
+  "dgSpecHash": "8lZ00Zr1PBi6lnu8iRnDCwMGJV1JIdwm6fR3zP4dqKnG0m0h7GAQ5bEnJmvxOuNFKxyXqv/yieicqvIfv+ICmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AD\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\AD\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
