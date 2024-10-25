@@ -6,6 +6,7 @@ namespace Domain.ViewModel
     {
         public String FirstName {  get; set; }
         public String LastName { get; set; }
+
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress]
         public String Email { get; set; }

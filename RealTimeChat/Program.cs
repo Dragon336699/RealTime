@@ -1,6 +1,7 @@
 using DataAccess.DbContext;
 using Microsoft.EntityFrameworkCore;
 using RealTimeChat.AddServicesCollection;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,10 +23,21 @@ builder.Services.AddDbContext<RealTimeDbContext>(options =>
     )
 );
 
+builder.Services.AddAutoMapper(typeof(Program));
+
 var webSocketServer = new WebSocketServer();
 webSocketServer.ConfigureServices(builder.Services);
 
+builder.Services.ConfigureServices();
+
 var app = builder.Build();
+
+app.UseCors(options => options
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+);
+
 
 
 webSocketServer.Configure(app);

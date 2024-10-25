@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Entities;
 using Domain.ViewModel;
+using Microsoft.AspNetCore.Identity;
 
 namespace DataAccess.AutoMapper
 {
@@ -8,6 +9,7 @@ namespace DataAccess.AutoMapper
     {
         public AutoMapperProfile() {
             CreateMap<User, UserRegistration>();
+            CreateMap<IdentityRole<int>, Role>();
         }
     }
 }

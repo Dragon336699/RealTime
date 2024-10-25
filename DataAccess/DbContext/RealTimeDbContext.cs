@@ -28,6 +28,7 @@ namespace DataAccess.DbContext
                 .WithMany(t => t.Attachments)
                 .HasForeignKey(t => t.messageid)
                 .OnDelete(DeleteBehavior.Cascade);
+
             builder.Entity<Message>()
                 .HasOne(t => t.Chat)
                 .WithMany(t => t.Messages)

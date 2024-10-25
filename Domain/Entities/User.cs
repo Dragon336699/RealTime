@@ -10,6 +10,10 @@ namespace Domain.Entities
 {
     public class User : IdentityUser<int>
     {
-         public List<Chat> Chats {  get; set; }
+        public List<Chat> Chats {  get; set; }
+
+        public string FirstName {  get; set; }
+
+        public string LastName { get; set; }
     }
 }
