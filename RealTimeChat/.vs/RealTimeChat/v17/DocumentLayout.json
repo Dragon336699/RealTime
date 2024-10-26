@@ -3,25 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1858CEA4-C6C4-4E78-BCD0-A15BFFCAB688}|..\\DataAccess\\DataAccess.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\dataaccess\\automapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1858CEA4-C6C4-4E78-BCD0-A15BFFCAB688}|..\\DataAccess\\DataAccess.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\dataaccess\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1858CEA4-C6C4-4E78-BCD0-A15BFFCAB688}|..\\DataAccess\\DataAccess.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\dataaccess\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\viewmodel\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\viewmodel\\userinfordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\viewmodel\\userregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1858CEA4-C6C4-4E78-BCD0-A15BFFCAB688}|..\\DataAccess\\DataAccess.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\dataaccess\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\interfaces\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 289,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,80 +65,158 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAVAAAA",
+              "DocumentIndex": 1,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\AutoMapper\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\AutoMapper\\AutoMapperProfile.cs",
+              "RelativeToolTip": "..\\DataAccess\\AutoMapper\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T11:25:37.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\User.cs",
-              "RelativeToolTip": "..\\Domain\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T09:43:43.839Z",
+              "WhenOpened": "2024-10-26T08:50:04.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\LoginModel.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\ViewModel\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\LoginModel.cs",
-              "RelativeToolTip": "..\\Domain\\ViewModel\\LoginModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA8AAAAAAAAA",
+              "Title": "AddTransient.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
+              "RelativeDocumentMoniker": "AddServicesCollection\\AddTransient.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
+              "RelativeToolTip": "AddServicesCollection\\AddTransient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T07:19:13.156Z",
+              "WhenOpened": "2024-10-26T08:48:43.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:31.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\DataAccess\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:32:14.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:15:51.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwCkAAABSAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAewHoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T07:01:18.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddTransient.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
-              "RelativeDocumentMoniker": "AddServicesCollection\\AddTransient.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
-              "RelativeToolTip": "AddServicesCollection\\AddTransient.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA9wCQAAABDAAAA",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:13:45.227Z",
+              "WhenOpened": "2024-10-25T09:43:43.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\UserRegistration.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\ViewModel\\UserRegistration.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\UserRegistration.cs",
-              "RelativeToolTip": "..\\Domain\\ViewModel\\UserRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "DocumentIndex": 10,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T06:13:31.396Z",
+              "WhenOpened": "2024-10-26T07:05:54.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T12:04:04.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T11:25:37.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserInforDto.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\UserInforDto.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\ViewModel\\UserInforDto.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\UserInforDto.cs",
+              "RelativeToolTip": "..\\Domain\\ViewModel\\UserInforDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:19:00.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Interfaces\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Interfaces\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\Domain\\Interfaces\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T12:04:08.917Z",
               "EditorCaption": ""
             }
           ]

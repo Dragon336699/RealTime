@@ -15,6 +15,7 @@ namespace RealTimeChat.AddServicesCollection
         public static void ConfigureTransient(this IServiceCollection services)
         {
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<IUserRepository, UserRepository>();
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }

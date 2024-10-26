@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Domain.Interfaces;
 using Domain.ViewModel;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,8 @@ using System.Text;
 
 namespace RealTimeChat.Controllers
 {
+    [Route("api/chat")]
+    [ApiController]
     public class UserController : Controller
     {
         private readonly IMediator _mediator;
@@ -18,14 +21,16 @@ namespace RealTimeChat.Controllers
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly IMapper _mapper;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public UserController(IMediator mediator, IConfiguration configuration, UserManager<User> userManager, IMapper mapper, RoleManager<Role> roleManager)
+        public UserController(IMediator mediator, IConfiguration configuration, UserManager<User> userManager, IMapper mapper, RoleManager<Role> roleManager, IUnitOfWork unitOfWork)
         {
             _mediator = mediator;
             _configuration = configuration;
             _userManager = userManager;
             _mapper = mapper;
             _roleManager = roleManager;
+            _unitOfWork = unitOfWork;
         }
 
         [HttpPost]
@@ -71,9 +76,9 @@ namespace RealTimeChat.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
+        [Route("user/login")]
 
-        public async Task<IActionResult> Login(LoginModel model)
+        public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -101,13 +106,24 @@ namespace RealTimeChat.Controllers
                 return Ok(new
                 {
                     token = new JwtSecurityTokenHandler().WriteToken(token),
-                    expiration = token.ValidTo
+                    expiration = token.ValidTo,
+                    message = "Login successful!"
                 });
 
             }
             return Unauthorized();
-
         }
+
+        [HttpGet]
+        [Route("user/infor")]
+        public async Task<IActionResult> GetInforUser(string token)
+        {
+            var user = _unitOfWork.Users.GetUserByToken(token);
+            var userInfor = _mapper.Map<UserInforDto>(user);
+
+            return Ok(userInfor);
+        }
+
 
         private JwtSecurityToken GetToken(List<Claim> authClaims)
         {

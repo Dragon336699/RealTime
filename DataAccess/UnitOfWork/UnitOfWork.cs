@@ -1,4 +1,5 @@
 ﻿using DataAccess.DbContext;
+using DataAccess.Repositories;
 using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,11 @@ namespace DataAccess.UnitOfWork
     public class UnitOfWork : IUnitOfWork
     {
         private readonly RealTimeDbContext _context;
+        public IUserRepository Users {  get; private set; }
         public UnitOfWork(RealTimeDbContext context)
         {
             _context = context;
+            Users = new UserRepository(_context);
         }
 
         public int Complete()
