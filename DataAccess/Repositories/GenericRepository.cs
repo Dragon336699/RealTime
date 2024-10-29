@@ -29,7 +29,7 @@ namespace DataAccess.Repositories
 
         public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
-            return _context.Set<T>().Where(expression);
+            return _context.Set<T>().Where(expression).ToList();
         }
 
         public void Add (T entity)

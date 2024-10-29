@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,9 +23,13 @@ namespace DataAccess.Repositories
 
         public User GetUserByToken(string token)
         {
-
             var userMail = GetUserMail(token);
             return _context.Set<User>().FirstOrDefault(u => u.Email == userMail);
+        }
+
+        public IEnumerable<User> Find(Expression<Func<User, bool>> expression)
+        {
+            return _context.Set<User>().Where(expression).ToList();
         }
 
         private string GetUserMail(string token)

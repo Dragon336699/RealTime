@@ -1,5 +1,8 @@
 using DataAccess.DbContext;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Options;
 using RealTimeChat.AddServicesCollection;
 using System.Reflection;
 
@@ -28,17 +31,22 @@ builder.Services.AddAutoMapper(typeof(Program));
 var webSocketServer = new WebSocketServer();
 webSocketServer.ConfigureServices(builder.Services);
 
-builder.Services.ConfigureServices();
+builder.Services.ConfigureServices(builder.Configuration);
 
 var app = builder.Build();
 
 app.UseCors(options => options
-    .AllowAnyOrigin()
+    .WithOrigins("http://localhost:4200")
     .AllowAnyMethod()
     .AllowAnyHeader()
+    .AllowCredentials()
 );
 
 
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 webSocketServer.Configure(app);
 
@@ -52,7 +60,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
 
 app.MapControllers();
 

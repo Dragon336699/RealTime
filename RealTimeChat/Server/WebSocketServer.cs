@@ -8,7 +8,6 @@ public class WebSocketServer
     }
     public void Configure(IApplicationBuilder app)
     {
-        app.UseRouting();
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapHub<ChatHub>("/chathub");

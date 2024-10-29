@@ -3,6 +3,7 @@ using Domain.Entities;
 using Domain.Interfaces;
 using Domain.ViewModel;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -16,16 +17,14 @@ namespace RealTimeChat.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private readonly IMediator _mediator;
         private readonly IConfiguration _configuration;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
 
-        public UserController(IMediator mediator, IConfiguration configuration, UserManager<User> userManager, IMapper mapper, RoleManager<Role> roleManager, IUnitOfWork unitOfWork)
+        public UserController(IConfiguration configuration, UserManager<User> userManager, IMapper mapper, RoleManager<Role> roleManager, IUnitOfWork unitOfWork)
         {
-            _mediator = mediator;
             _configuration = configuration;
             _userManager = userManager;
             _mapper = mapper;
@@ -93,7 +92,8 @@ namespace RealTimeChat.Controllers
                 var authClaims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Email, model.Email),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
                 };
 
                 foreach (var role in  userRole)
@@ -122,6 +122,17 @@ namespace RealTimeChat.Controllers
             var userInfor = _mapper.Map<UserInforDto>(user);
 
             return Ok(userInfor);
+        }
+
+        [HttpGet]
+        [Route("user/find")]
+        [Authorize]
+        public async Task<IActionResult> FindUserByName(string searchContent)
+        {
+            var users = _unitOfWork.Users.Find(u => (u.LastName + " " + u.FirstName).Contains(searchContent));
+            var userDtos = users.Select(u => _mapper.Map<UserInforDto>(u)).ToList();
+
+            return Ok(userDtos);
         }
 
 

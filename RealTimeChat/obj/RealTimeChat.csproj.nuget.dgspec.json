@@ -225,13 +225,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Abp.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[9.4.2, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.4.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.SignalR.Common": {
               "target": "Package",
