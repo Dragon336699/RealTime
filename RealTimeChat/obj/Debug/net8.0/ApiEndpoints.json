@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "RealTimeChat.Controllers.ChatController",
+    "Method": "CreateChat",
+    "RelativePath": "api/v1/chat/createChat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createChat",
+        "Type": "Domain.ViewModel.CreateChatDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.MessageController",
+    "Method": "SaveMessage",
+    "RelativePath": "api/v1/message/saveMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageInfor",
+        "Type": "Domain.ViewModel.SaveMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/v1/user/confirmEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "FindUserByName",
+    "RelativePath": "api/v1/user/find",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchContent",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "FindUserById",
+    "RelativePath": "api/v1/user/findById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "GetInforUser",
+    "RelativePath": "api/v1/user/infor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/v1/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Domain.ViewModel.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RealTimeChat.Controllers.UserController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/v1/user/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userModel",
+        "Type": "Domain.ViewModel.UserRegistration",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

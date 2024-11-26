@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
-    public class UserRepository : GenericRepository<User> ,IUserRepository
+    public class UserRepository : GenericRepository<User> , IUserRepository
     {
         public UserRepository(RealTimeDbContext context) : base(context)
         {

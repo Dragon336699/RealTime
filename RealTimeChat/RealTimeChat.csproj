@@ -29,8 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Commands\" />
-    <Folder Include="Handler\CommandsHandler\" />
+    <Folder Include="Features\Commands\Message\" />
   </ItemGroup>
 
 </Project>

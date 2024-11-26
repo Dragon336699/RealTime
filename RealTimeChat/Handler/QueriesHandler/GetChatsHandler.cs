@@ -16,10 +16,10 @@ namespace RealTimeChat.Handler.QueriesHandler
 
         public async Task<IEnumerable<Chat>> Handle(GetChats request, CancellationToken cancellationToken)
         {
-            var query = "SELECT c.* FROM Chats c JOIN ChatUsers cu ON c.id = cu.ChatsId WHERE cu.UsersId = @UserId AND c.id = cu.Chatsid;";
+            var query = "SELECT c.* FROM Chats c JOIN ChatUser cu ON c.Id = cu.ChatId WHERE cu.UserId = @UserId AND c.Id = cu.ChatId;";
             using (var connection = _dapperContext.CreateConnection())
             {
-                var chat = await connection.QueryAsync<Chat>(query, new { request.userId });
+                var chat = await connection.QueryAsync<Chat>(query, new { request.UserId });
                 if (chat == null) { return null; }
                 return chat;
             }

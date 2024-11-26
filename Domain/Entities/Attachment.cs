@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,13 +11,14 @@ namespace Domain.Entities
     public class Attachment
     {
         [Key]
-        public int id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
         [Required]
-        public string file_url { get; set; }
+        public string FileUrl { get; set; }
         [Required]
-        public int file_size { get; set; }
+        public int FileSize { get; set; }
         [Required]
-        public int messageid { get; set; }
+        public Guid MessageId { get; set; }
         public Message Message { get; set; }
     }
 }

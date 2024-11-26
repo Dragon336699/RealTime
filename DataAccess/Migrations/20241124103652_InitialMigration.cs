@@ -4,48 +4,47 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Chats",
+                name: "Chat",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    chat_name = table.Column<string>(type: "text", nullable: false),
-                    is_group = table.Column<bool>(type: "boolean", nullable: false),
-                    created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    ChatName = table.Column<string>(type: "text", nullable: true),
+                    IsGroup = table.Column<bool>(type: "boolean", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Chats", x => x.id);
+                    table.PrimaryKey("PK_Chat", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Message_statuses",
+                name: "MessageStatus",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    name = table.Column<string>(type: "text", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    Name = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Message_statuses", x => x.id);
+                    table.PrimaryKey("PK_MessageStatus", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Role",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     Name = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
@@ -59,8 +58,7 @@ namespace DataAccess.Migrations
                 name: "User",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
                     UserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
@@ -84,16 +82,15 @@ namespace DataAccess.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "User_statuses",
+                name: "UserStatus",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    name = table.Column<string>(type: "text", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    Name = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_User_statuses", x => x.id);
+                    table.PrimaryKey("PK_UserStatus", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -102,7 +99,7 @@ namespace DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    RoleId = table.Column<int>(type: "integer", nullable: false),
+                    RoleId = table.Column<Guid>(type: "uuid", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -123,7 +120,7 @@ namespace DataAccess.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    UserId = table.Column<int>(type: "integer", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
                     ClaimType = table.Column<string>(type: "text", nullable: true),
                     ClaimValue = table.Column<string>(type: "text", nullable: true)
                 },
@@ -145,7 +142,7 @@ namespace DataAccess.Migrations
                     LoginProvider = table.Column<string>(type: "text", nullable: false),
                     ProviderKey = table.Column<string>(type: "text", nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<int>(type: "integer", nullable: false)
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -162,8 +159,8 @@ namespace DataAccess.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "integer", nullable: false),
-                    RoleId = table.Column<int>(type: "integer", nullable: false)
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    RoleId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -186,7 +183,7 @@ namespace DataAccess.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<int>(type: "integer", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
                     LoginProvider = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Value = table.Column<string>(type: "text", nullable: true)
@@ -206,80 +203,94 @@ namespace DataAccess.Migrations
                 name: "ChatUser",
                 columns: table => new
                 {
-                    Chatsid = table.Column<int>(type: "integer", nullable: false),
-                    UsersId = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    ChatId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    NickName = table.Column<string>(type: "text", nullable: false),
+                    Role = table.Column<string>(type: "text", nullable: true),
+                    JoinedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ChatUser", x => new { x.Chatsid, x.UsersId });
+                    table.PrimaryKey("PK_ChatUser", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ChatUser_Chats_Chatsid",
-                        column: x => x.Chatsid,
-                        principalTable: "Chats",
-                        principalColumn: "id",
+                        name: "FK_ChatUser_Chat_ChatId",
+                        column: x => x.ChatId,
+                        principalTable: "Chat",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ChatUser_User_UsersId",
-                        column: x => x.UsersId,
+                        name: "FK_ChatUser_User_UserId",
+                        column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Messages",
+                name: "Message",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    content = table.Column<string>(type: "text", nullable: false),
-                    send_date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    message_statusid = table.Column<int>(type: "integer", nullable: false),
-                    userid = table.Column<int>(type: "integer", nullable: false),
-                    chatid = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    Content = table.Column<string>(type: "text", nullable: false),
+                    SendDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    MessageStatusId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    ChatId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Messages", x => x.id);
+                    table.PrimaryKey("PK_Message", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Messages_Chats_chatid",
-                        column: x => x.chatid,
-                        principalTable: "Chats",
-                        principalColumn: "id",
+                        name: "FK_Message_Chat_ChatId",
+                        column: x => x.ChatId,
+                        principalTable: "Chat",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Messages_Message_statuses_message_statusid",
-                        column: x => x.message_statusid,
-                        principalTable: "Message_statuses",
-                        principalColumn: "id",
+                        name: "FK_Message_MessageStatus_MessageStatusId",
+                        column: x => x.MessageStatusId,
+                        principalTable: "MessageStatus",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Messages_User_userid",
-                        column: x => x.userid,
+                        name: "FK_Message_User_UserId",
+                        column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Attachments",
+                name: "Attachment",
                 columns: table => new
                 {
-                    id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    file_url = table.Column<string>(type: "text", nullable: false),
-                    file_size = table.Column<int>(type: "integer", nullable: false),
-                    messageid = table.Column<int>(type: "integer", nullable: false)
+                    Id = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    FileUrl = table.Column<string>(type: "text", nullable: false),
+                    FileSize = table.Column<int>(type: "integer", nullable: false),
+                    MessageId = table.Column<Guid>(type: "uuid", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Attachments", x => x.id);
+                    table.PrimaryKey("PK_Attachment", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Attachments_Messages_messageid",
-                        column: x => x.messageid,
-                        principalTable: "Messages",
-                        principalColumn: "id",
+                        name: "FK_Attachment_Message_MessageId",
+                        column: x => x.MessageId,
+                        principalTable: "Message",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "MessageStatus",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { new Guid("461faaed-f01c-4a62-b851-8f0c03489e0a"), "Sending" },
+                    { new Guid("567571c5-ebcc-434c-b27c-149a5acf80c1"), "Delivered" },
+                    { new Guid("b930aba8-a3d4-4833-ab16-5a0544cb9457"), "Error" },
+                    { new Guid("c484e477-f197-47a1-9c5b-39d2470205c4"), "Sent" },
+                    { new Guid("da8ecc34-1610-4c79-ba1f-9f891693b84f"), "Seen" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -303,29 +314,34 @@ namespace DataAccess.Migrations
                 column: "RoleId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Attachments_messageid",
-                table: "Attachments",
-                column: "messageid");
+                name: "IX_Attachment_MessageId",
+                table: "Attachment",
+                column: "MessageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ChatUser_UsersId",
+                name: "IX_ChatUser_ChatId",
                 table: "ChatUser",
-                column: "UsersId");
+                column: "ChatId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_chatid",
-                table: "Messages",
-                column: "chatid");
+                name: "IX_ChatUser_UserId",
+                table: "ChatUser",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_message_statusid",
-                table: "Messages",
-                column: "message_statusid");
+                name: "IX_Message_ChatId",
+                table: "Message",
+                column: "ChatId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_userid",
-                table: "Messages",
-                column: "userid");
+                name: "IX_Message_MessageStatusId",
+                table: "Message",
+                column: "MessageStatusId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Message_UserId",
+                table: "Message",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
@@ -364,25 +380,25 @@ namespace DataAccess.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Attachments");
+                name: "Attachment");
 
             migrationBuilder.DropTable(
                 name: "ChatUser");
 
             migrationBuilder.DropTable(
-                name: "User_statuses");
+                name: "UserStatus");
 
             migrationBuilder.DropTable(
                 name: "Role");
 
             migrationBuilder.DropTable(
-                name: "Messages");
+                name: "Message");
 
             migrationBuilder.DropTable(
-                name: "Chats");
+                name: "Chat");
 
             migrationBuilder.DropTable(
-                name: "Message_statuses");
+                name: "MessageStatus");
 
             migrationBuilder.DropTable(
                 name: "User");

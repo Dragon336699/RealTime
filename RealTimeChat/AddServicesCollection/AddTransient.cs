@@ -4,10 +4,15 @@ using DataAccess.Repositories;
 using DataAccess.UnitOfWork;
 using Domain.Entities;
 using Domain.Interfaces;
+using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using RealTimeChat.Features.Commands.Chat;
+using RealTimeChat.Handler.CommandsHandler.ChatHandler;
+using RealTimeChat.Services;
 using System.Reflection;
 using System.Text;
 
@@ -18,9 +23,12 @@ namespace RealTimeChat.AddServicesCollection
         public static void ConfigureTransient(this IServiceCollection services)
         {
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<IRequestHandler<CreateChat, Guid>, CreateChatHandler>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+
         }
 
         public static void ConfigureServices (this IServiceCollection services, IConfiguration configuration)
@@ -29,6 +37,11 @@ namespace RealTimeChat.AddServicesCollection
             services.AddSignalR();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromHours(2);
+            });
+
             services.AddIdentity<User, Role>(options =>
             {
                 options.Password.RequiredLength = 8;
@@ -36,8 +49,10 @@ namespace RealTimeChat.AddServicesCollection
                 options.Password.RequireDigit = false;
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
+                options.SignIn.RequireConfirmedEmail = true;
             })
                     .AddRoles<Role>()
+                    .AddDefaultTokenProviders()
                     .AddEntityFrameworkStores<RealTimeDbContext>();
 
             services.AddAuthentication(options => {

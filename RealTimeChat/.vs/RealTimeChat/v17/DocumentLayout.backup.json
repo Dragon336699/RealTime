@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:addservicescollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1858CEA4-C6C4-4E78-BCD0-A15BFFCAB688}|..\\DataAccess\\DataAccess.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\dataaccess\\repositories\\messagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5A88E1-42FD-4841-AF04-064C23FCA985}|..\\Domain\\Domain.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\domain\\viewmodel\\savemessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|c:\\users\\ad\\onedrive\\desktop\\realtimeworkspace\\realtime\\realtimechat\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0512DFB7-C918-4C06-B257-A76059284A62}|RealTimeChat.csproj|solutionrelative:controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 289,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddTransient.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
+              "RelativeDocumentMoniker": "AddServicesCollection\\AddTransient.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\AddServicesCollection\\AddTransient.cs",
+              "RelativeToolTip": "AddServicesCollection\\AddTransient.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:37:08.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T17:31:32.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAwHMAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T11:16:50.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Message.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\Message.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entities\\Message.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\Entities\\Message.cs",
+              "RelativeToolTip": "..\\Domain\\Entities\\Message.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:59:01.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaveMessageDto.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\SaveMessageDto.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\ViewModel\\SaveMessageDto.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\Domain\\ViewModel\\SaveMessageDto.cs",
+              "RelativeToolTip": "..\\Domain\\ViewModel\\SaveMessageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:57:47.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\MessageRepository.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Repositories\\MessageRepository.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\DataAccess\\Repositories\\MessageRepository.cs",
+              "RelativeToolTip": "..\\DataAccess\\Repositories\\MessageRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T10:46:15.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\RealTimeWorkSpace\\RealTime\\RealTimeChat\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Controllers\\MessageController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-24T09:39:29.578Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

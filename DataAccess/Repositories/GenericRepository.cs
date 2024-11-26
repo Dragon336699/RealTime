@@ -17,7 +17,7 @@ namespace DataAccess.Repositories
             _context = context;
         }
 
-        public T GetById(int id)
+        public T GetById(Guid id)
         {
             return _context.Set<T>().Find(id);
         }

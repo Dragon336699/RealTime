@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Domain.Entities
 {
-    public class User : IdentityUser<int>
+    public class User : IdentityUser<Guid>
     {
-        public List<Chat> Chats {  get; set; }
+        public List<ChatUser> ChatUsers { get; set; }
 
         public string FirstName {  get; set; }
 

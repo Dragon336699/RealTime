@@ -5,10 +5,10 @@ namespace RealTimeChat.Features.Queries
 {
     public class GetChats : IRequest<IEnumerable<Chat>>
     {
-        public int userId { get; set; }
-        public GetChats(int UserId)
+        public Guid UserId { get; set; }
+        public GetChats(Guid UserId)
         {
-            userId = UserId;
+            this.UserId = UserId;
         }
     }
 }
